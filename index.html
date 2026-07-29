@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Gradasi CSS Pop Art 🎨✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grad-container">
+        <header class="grad-header">
+            <h1>🎨 CSS GRADIENT</h1>
+            <p>Atur dua kombinasi warna dan sudut kemiringan untuk menciptakan kode gradasi CSS instan!</p>
+        </header>
+
+        <section class="preview-wrapper">
+            <div id="gradient-preview" class="preview-box"></div>
+        </section>
+
+        <main class="grad-body">
+            <div class="control-row">
+                <div class="input-group">
+                    <label for="color-1">Warna 1</label>
+                    <input type="color" id="color-1" value="#ff477e">
+                </div>
+                <div class="input-group">
+                    <label for="color-2">Warna 2</label>
+                    <input type="color" id="color-2" value="#00f0ff">
+                </div>
+            </div>
+
+            <div class="input-group range-group">
+                <label for="input-angle">Sudut Arah: <strong id="txt-angle">135</strong>°</label>
+                <input type="range" id="input-angle" min="0" max="360" value="135">
+            </div>
+        </main>
+
+        <footer class="code-section">
+            <label>Kode CSS Gradient:</label>
+            <div class="code-box">
+                <textarea id="txt-css-code" readonly>linear-gradient(135deg, #ff477e, #00f0ff);</textarea>
+                <button id="btn-copy" class="btn-pop">Salin Kode 📋</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
