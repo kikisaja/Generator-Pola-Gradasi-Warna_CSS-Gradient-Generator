@@ -1,0 +1,168 @@
+:root {
+    --bg-light: #f1f5f9;
+    --panel-bg: #ffffff;
+    --text-dark: #1e293b;
+    --stroke-dark: #1e293b;
+    --btn-color: #06d6a0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    /*background-color: var(--bg-light);*/
+    background: linear-gradient(80deg, #ff94b4, #00f0ff);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grad-container {
+    background-color: var(--panel-bg);
+    padding: 30px 20px;
+    border-radius: 24px;
+    border: 3px solid var(--stroke-dark);
+    box-shadow: 6px 6px 0px var(--stroke-dark);
+    max-width: 440px;
+    width: 100%;
+}
+
+.grad-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grad-header h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.grad-header p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+/* --- KOTAK LIVE PREVIEW GRADASI --- */
+.preview-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.preview-box {
+    width: 100%;
+    height: 150px;
+    border: 3px solid var(--stroke-dark);
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px var(--stroke-dark);
+    /* Latar belakang standar awal sebelum diubah oleh JavaScript */
+    background: linear-gradient(135deg, #ff477e, #00f0ff);;
+}
+
+/* --- PANEL KONTROL WARNA & SLIDER --- */
+.control-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.control-row .input-group {
+    flex: 1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.input-group input[type="color"] {
+    width: 100%;
+    height: 45px;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+    padding: 2px;
+}
+
+.range-group {
+    margin-bottom: 20px;
+}
+
+.range-group input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* --- SEKTOR BOX OUTPUT KODE --- */
+.code-section label {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+}
+
+.code-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.code-box textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #334155;
+    background-color: #f8fafc;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 10px;
+    resize: none; /* Mengunci ukuran teks area agar tidak bisa ditarik manual */
+    outline: none;
+}
+
+/* Tombol Salin Bergaya Pop Art */
+.btn-pop {
+    background-color: var(--btn-color);
+    color: var(--text-dark);
+    border: 2px solid var(--stroke-dark);
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--stroke-dark);
+    transition: all 0.1s ease;
+    outline: none;
+}
+
+.btn-pop:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px var(--stroke-dark);
+}
+
+.btn-pop:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px var(--stroke-dark);
+}
